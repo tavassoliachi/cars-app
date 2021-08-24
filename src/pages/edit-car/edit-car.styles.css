@@ -1,0 +1,33 @@
+.edit-car{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(161, 161, 161);
+    padding:20px 80px;
+    border-radius: 10px;
+    color: white;
+
+}
+.edit-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button1{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+.button1:hover{
+    /* color: red; */
+    outline: 2px red solid;
+    outline-offset: -5px;
+    
+}
+#edit-button{
+    font-size: 15px;
+    font-weight: normal;
+    
+}

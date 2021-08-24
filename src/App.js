@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-
+import HomePage from './pages/homepage/homepage.component';
+import Cars from './pages/cars/cars.component';
+import NewCar from './pages/new car/new-car.component';
+import EditCar from './pages/edit-car/edit-car.component';
+// import { useState } from 'react';
+import {Route , Switch} from 'react-router-dom';
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="header">Car Shop</h1>
+
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/cars' component={Cars} />
+        <Route exact path='/cars/new' component={NewCar} />
+        <Route exact path='/cars/edit/:id' component={EditCar} />
+      </Switch>
+        
     </div>
   );
 }
